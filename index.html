@@ -3,14 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IA Violência Contra Mulher</title>
-  <script defer src="script.js"></script>
+  <title>IA de Apoio à Mulher</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>IA de Apoio a Mulheres</h1>
-  <div id="chat"></div>
-  <input type="text" id="input" placeholder="Escreva aqui...">
-  <button onclick="sendMessage()">Enviar</button>
+  <header>
+    <h1>🛡️ IA de Apoio à Mulher</h1>
+    <p>Discreta, rápida e segura</p>
+  </header>
+
+  <main>
+    <section id="chat-section">
+      <div id="chat"></div>
+      <div id="input-area">
+        <input type="text" id="input" placeholder="Escreva aqui...">
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+    </section>
+
+    <section id="map-section">
+      <h2>Delegacias Próximas</h2>
+      <div id="map"></div>
+      <div id="delegacias-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Se estiver em perigo imediato, ligue 190 ou 180.</p>
+  </footer>
 </body>
+</html>
+
 </html>
