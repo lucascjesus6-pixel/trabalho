@@ -10,9 +10,91 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <h1>🛡️ IA de Apoio à Mulher</h1>
-    <p>Segura, discreta e acolhedora</p>
+    <div class="logo-section">
+      <span class="logo">🛡️</span>
+      <h1>IA de Apoio à Mulher</h1>
+    </div>
+    <p class="subtitle">Segura, discreta e acolhedora</p>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- CHAT SECTION -->
+    <section id="chat-section">
+      <div id="chat"></div>
+      <div id="input-area">
+        <input type="text" id="input" placeholder="Escreva aqui...">
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+      <!-- Pop-up de instruções -->
+      <div id="chat-instructions">
+        <p>Digite sua situação ou toque nos botões abaixo para ajuda rápida.</p>
+      </div>
+    </section>
+
+    <!-- BUTTONS SECTION -->
+    <section id="buttons-section">
+      <button class="emergency-btn" onclick="window.location.href='tel:180'">📞 180</button>
+      <button class="emergency-btn" onclick="window.location.href='tel:190'">📞 190</button>
+      <button class="map-btn" onclick="toggleMap()">📍 Delegacias</button>
+      <button class="info-btn" onclick="toggleInfo()">ℹ️ Instruções</button>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section id="info-section" style="display:none;">
+      <h2>Tipos de Violência</h2>
+      <ul>
+        <li><strong>Física:</strong> Agressão corporal, empurrões, tapas, socos.</li>
+        <li><strong>Psicológica:</strong> Humilhação, chantagem, intimidação.</li>
+        <li><strong>Sexual:</strong> Assédio, abuso, coerção.</li>
+        <li><strong>Patrimonial:</strong> Controle financeiro ou destruição de bens.</li>
+      </ul>
+      <h2>O que fazer</h2>
+      <ol>
+        <li>Mantenha-se segura, se possível em local público ou protegido.</li>
+        <li>Contate imediatamente 180 ou 190.</li>
+        <li>Procure delegacia da mulher ou abrigo próximo.</li>
+        <li>Documente provas (mensagens, fotos, vídeos).</li>
+      </ol>
+      <p>Estas informações são confidenciais e visam seu acolhimento e segurança.</p>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section id="map-section">
+      <h2>Delegacias Próximas</h2>
+      <div id="map"></div>
+      <div id="delegacias-list"></div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section id="cards-section">
+      <h2>Serviços de Apoio</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3>180 - Central de Atendimento</h3>
+          <p>Atendimento confidencial para denúncia de violência doméstica.</p>
+        </div>
+        <div class="card">
+          <h3>ONG Acolhe</h3>
+          <p>Apoio psicológico e abrigo temporário para mulheres em risco.</p>
+        </div>
+        <div class="card">
+          <h3>Psicóloga Online</h3>
+          <p>Atendimento remoto confidencial para apoio emocional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Se estiver em perigo, ligue 190 ou 180 imediatamente.</p>
+    </footer>
+  </main>
+</body>
+</html>
+
   </header>
 
   <main>
